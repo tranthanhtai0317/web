@@ -1,0 +1,74 @@
+		  .header{
+		  	margin-top: 10px;
+		  }
+		  .btn-search{
+		  	float:right;
+		  }
+		  .dropdown-menu{
+		  	width: 100% !important ;
+		  }
+
+		  .breadcrumb{
+		  	background-color: black !important;
+		  }
+		  .product{
+		  	text-align: center;
+		  	border: 1px solid #e5e5e5;
+		  	float: left;
+		  }
+		  .product img{
+		  	margin: 13px;
+		  	width: 225px;
+		  	height: 337px;
+		  }
+		  .info{
+		  	margin: 10px;
+		  }
+		  .product{
+		  	margin: 10px;
+		  }
+		  .page{
+		  	text-align: center;
+		  }
+		  footer{
+		  		position: relative;
+				background-color: black;
+				min-height: 100px;
+				width: 100%;
+				height: auto;
+				bottom: 0px;
+		  }
+		  .glyphicon{
+		  	height: 20px;
+		  }
+		  .clear{
+		  	clear: both;
+		  }
+		  .chitiet-info{
+		  	border-bottom: 1px solid #e5e5e5;
+		  }
+		  .add-to-cart{
+		  	margin-top: 20px;
+		  }
+		  .btn-cart{
+		  	position: fixed;
+		  	top: 300px;
+		  }
+		  .btn-f{
+		  	position: fixed;
+		  	top: 260px;
+		  	width: 40px;
+		  }
+		  .btn-top{
+		  	position: fixed;
+		  	bottom: 10px;
+		  }
+		  .btn-thanhtoan{
+		  	position: fixed;
+		  	top: 260px;
+		  	right: 0px;
+		  }
+		  .well{
+		  	background-color:black;
+		  	color: white;
+		  }

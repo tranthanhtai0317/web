@@ -1,0 +1,414 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	  <!-- 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	   -->
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<!-- header -->
+		<header>
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">Trần Thanh Tài Shop</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav">
+			        <li class="active"><a href="#">Trang Chủ</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nam<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Page 1-1</a></li>
+			            <li><a href="#">Page 1-2</a></li>
+			            <li><a href="#">Page 1-3</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nữ <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Page 1-1</a></li>
+			            <li><a href="#">Page 1-2</a></li>
+			            <li><a href="#">Page 1-3</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Thể Thao <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Bóng Đá</a></li>
+			            <li><a href="#">Bóng Chuyển</a></li>
+			            <li><a href="#">Page 1-3</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#" data-toggle="modal" data-target="#myModalDangNhap"><span class="glyphicon glyphicon-user" ></span> Đăng Nhập</a></li>
+			        <li><a href="#" data-toggle="modal" data-target="#myModalDangKy"><span class="glyphicon glyphicon-log-in" ></span> Đăng Ký</a></li>
+			        <li><a href="#" data-toggle="modal" data-target="#myModalTimKiem"><span class="glyphicon glyphicon-search" ></span> Tìm Kiếm</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+
+			<!-- myModalTimKiem -->
+			
+			<div id="myModalTimKiem" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Tìm Kiếm</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+					  <div class="form-group">
+					    <label for="email">Nhập Từ Khóa:</label>
+					    <input type="text" class="form-control" id="email">
+					  </div>
+					  <button type="submit" class="btn btn-success">Tìm</button>
+					</form>
+			      </div>
+			      	
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+			<!-- end myModalTimKiem -->
+
+			<!-- myModalDangNhap -->
+			
+			<div id="myModalDangNhap" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Đăng Nhập</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+					  <div class="form-group">
+					    <label for="email">Tên Tài Khoản:</label>
+					    <input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">Mật Khẩu:</label>
+					    <input type="password" class="form-control" id="pwd">
+					  </div>
+					  <div class="checkbox">
+					    <label><input type="checkbox"> Ghi nhớ</label>
+					  </div>
+					  <button type="submit" class="btn btn-success">Đăng Nhập</button>
+					</form>
+			      </div>
+			      	
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+			<!-- end myModalDangNhap -->
+
+			<!-- myModalDangKy -->
+			<div id="myModalDangKy" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Đăng Ký</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+					  <div class="form-group">
+					    <label for="email">Tên Tài Khoản:</label>
+					    <input type="email" class="form-control" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">Mật Khẩu:</label>
+					    <input type="password" class="form-control" id="pwd">
+					  </div>
+					  <div class="form-group">
+					    <label for="pwd">Xác Nhận Mật Khẩu:</label>
+					    <input type="password" class="form-control" id="pwd">
+					  </div>
+					  <div class="checkbox">
+					    <label><input type="checkbox"> Tự Động Đăng Nhập</label>
+					  </div>
+					  <button type="submit" class="btn btn-success">Hoàn Thành</button>
+					</form>
+			      </div>
+			      	
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
+			<!-- end myModalDangKy -->
+
+		</header>
+		<!-- 
+			#Login + Sign up use Modal
+			#Search use Modal
+			#Cart redirect
+		 -->
+		<!-- end header -->
+	<div class="container-fluid">
+		<!-- Carousel -->
+		<!-- end Carousel -->
+		<!-- Breadcrumb -->
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<ul class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Private</a></li>
+				  <li><a href="#">Pictures</a></li>
+				  <li class="active">Vacation</li> 
+				</ul>
+				<div class="well well-sm">Danh Muc</div>
+
+				<div class="list-product">
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+					<!-- myModalChitiet -->
+					<div id="myModalChitiet" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Chi Tiết Sản Phẩm</h4>
+					      </div>
+					      <div class="modal-body">
+
+					        <div class="container-fluid">
+					        		<div class="row">
+					        			<div class="col-sm-6">
+					        					<img src="product_img/1.jpg">
+					        			</div>
+					        			<div class="col-sm-6">
+					        				<div class="chitiet-info">
+						        				<h2>Tên Áo</h2>
+								        		<p>Giá: 20000</p>
+								        		<p>Miêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản phâmMiêu tả sản </p>
+					        				</div>
+					        				<div class="add-to-cart">
+												<form>
+												  <div class="form-group">
+												    <label >Số Lượng:</label>
+												    <input type="text" class="form-control" >
+												  </div>
+												  <button type="submit" class="btn btn-success">Add To Cart</button>
+												</form>
+					        				</div>
+
+					        			</div>
+					        		</div>
+
+
+
+					        </div>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+					<!-- end myModalChitiet -->
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>					
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>	
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+					<div class="product">
+						<div class="img">
+							<img src="product_img/1.jpg">
+						</div>
+						<div class="info">
+							<p>Áo Ba Lỗ</p>
+							<p>Giá:</p>
+						<button type="button" class="btn btn-primary btn-md">
+				          <span class="glyphicon glyphicon-shopping-cart"></span>
+				        </button>
+							<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModalChitiet">Chi Tiết</button>
+						</div>
+						
+					</div>
+
+				</div>
+				<div class="clear"></div>
+				<div>
+
+				</div>
+				<div class="page">
+					<ul class="pagination">
+					  <li><a href="#">First</a></li>
+					  <li><a href="#"><<</a></li>
+					  <li><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li><a href="#">>></a></li>
+					  <li><a href="#">Last</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="col-sm-1">
+				<a href="#">
+				<button class="btn btn-primary btn-cart">
+					<span class="glyphicon glyphicon-shopping-cart"></span>
+				</button>
+				</a>
+				<a href="https://www.facebook.com/tranthanhtaiha">
+				<button class="btn btn-primary btn-f">
+					<b>F</b>
+				</button>
+				</a>
+				<a href="#">
+				<button class="btn btn-primary btn-top">
+					<span class="glyphicon glyphicon-menu-up"></span>
+				</button>
+				</a>					
+			</div>
+		</div>
+
+		
+		<!-- end Breadcrumb -->
+		<!-- Category Name -->
+		<!-- end Category Name -->
+		<!-- List -->
+		<!-- end List -->
+		<!-- Pagination -->
+		<!-- end Pagination -->
+
+	</div>
+	<!-- footer -->
+	<footer class="container-fluid text-center">
+		<p>@Copyright:<a href=""> Trần Thanh Tài </a></p>
+		<p>23/10/2016 </p>
+	</footer>
+	<!-- end footer -->
+</body>
+</html>
